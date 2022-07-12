@@ -26,24 +26,25 @@ header {
 .logo {
     flex-basis: 15%;
     height: 30px;
+    margin: 0 50px;
 }
 
 .nav {
     flex-basis: 70%;
     justify-content: center;
     align-items: center;
+    list-style-type: none;
 }
 
-.nav > a {
+.nav li>a {
     color: #fff;
     text-decoration: none;
     padding: 0 20px;
 }
 
-.nav > a:hover {
+.nav li:hover {
     transform: scale(1.2);
     transition-duration: 400ms;
-    color: #c6efff;
 }
 
 .accedi {
@@ -70,7 +71,7 @@ header {
     background-size: cover;
 }
 
-.contenutooHeader{
+.contenutooHeader {
     text-align: center;
     margin: 0 auto;
     max-width: 750px;
@@ -88,7 +89,8 @@ header {
     line-height: 30px;
 }
 
-.contenutooHeader input{
+.contenutooHeader input {
+    cursor: pointer;
     color: #000;
     background-color: #fff;
     border: none;
@@ -98,18 +100,18 @@ header {
     font-size: 1.2rem;
 }
 
-.contenutooHeader input[value $="browser"]{
+.contenutooHeader input[value $="browser"] {
     color: #fff;
     background-color: #23272a;
 }
 
-.contenutooHeader input:hover{
+.contenutooHeader input:hover {
     background-color: rgb(223, 244, 250);
     transform: scale(1.05);
     transition-duration: 400ms;
 }
 
-.contenutooHeader input[value $="browser"]:hover{
+.contenutooHeader input[value $="browser"]:hover {
     background-color: #394046;
     transform: scale(1.05);
     transition-duration: 400ms;
@@ -117,57 +119,103 @@ header {
 
 /* Area principale della pagina, contenenti immagini e testo */
 .areaContenitore {
-    background-color: rgb(142, 232, 255);
-    border-bottom: 3px dotted green;
-    justify-content: space-between;
-    margin: 0 auto;
-    max-width: 1200px;
+    background-color: #fff;
 }
 
 .areaContenitore:nth-child(even) {
-    background-color: rgb(142, 167, 255);
+    background-color: #f6f6f6;
 }
 
-/* ---------inizio area da modificare--------- */
+.ondaSuperiore {
+    background-color: #fff;
+}
+
+.ondaInferiore {
+    transform: rotate(180deg);
+    background-color: #fff;
+}
+
+.areaTestoMain {
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1100px;
+}
+
 .img {
-    border: 1px solid black;
     justify-content: center;
     align-items: center;
-    width: 500px;
-    height: 350px;
-    margin: 50px 50px;
-    flex-basis: 70%;
+    flex-basis: 50%;
+    margin: 100px 0px;
+    max-width: 650px;
 }
 
 .contenutoTesto {
     justify-content: center;
     align-items: center;
-    margin: 50px 0;
-    flex-basis: 30%;
+    flex-basis: 50%;
+
 }
 
-/* ---------inizio area da eliminare--------- */
-.img2 {
-    border: 1px solid black;
-    width: 800px;
-    height: 450px;
-    margin: 50px 50px;
+.contenutoTesto h2 {
+    font-size: 2.8rem;
 }
 
-.contenutoTesto2 {
-    width: 800px;
-    height: 100px;
-    margin: 50px 50px;
+.contenutoTesto p {
+    padding-top: 25px;
+    font-size: 1.2rem;
+    line-height: 25px;
 }
 
-/* ---------fine area da eliminare--------- */
+.margineSinistro {
+    margin-left: 120px;
+}
+
+.margineDestro {
+    margin-right: 120px;
+}
 
 .flex-direction-column {
     flex-direction: column;
 }
 
-.align-items {
-    align-items: center;
+#styleTestoImmagine4{
+    padding: 80px 0 30px;
+}
+
+#styleTestoImmagine4 p{
+    text-align: center;
+    max-width: 900px;
+}
+
+#styleImmagine4{
+    width: 1050px;
+    justify-content: center;
+    align-self: center;
+}
+
+#styleImmagine4Inferiore{
+    padding: 20px 50px;
+    background-image: url("../img/stars.svg");
+    background-repeat: no-repeat;
+    margin: 0px auto;
+}
+
+#styleImmagine4Inferiore h2{
+    font-size: 1.7rem;
+    padding: 20px 0 40px;
+}
+
+#styleImmagine4Inferiore input{
+    cursor: pointer;
+    color: #fff;
+    border-radius: 50px;
+    background-color: #8ea1e1;
+    border: none;
+    padding: 14px;
+    font-size: 1.3rem;
+    width: 220px;
+    align-self: center;
+    margin-bottom: 110px;
 }
 
 footer {

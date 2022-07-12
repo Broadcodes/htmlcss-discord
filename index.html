@@ -17,13 +17,13 @@
         <!-- Area superiore del Header, relativo alla barra di navigazione -->
         <div class="barraNav flexbox">
             <a href="index.html"><img class="logo" src="img/logo.svg" alt="Discord"></a>
-            <div class="nav flexbox">
-                <a href="#">Scarica</a>
-                <a href="#">Perchè Discord</a>
-                <a href="#">Nitro</a>
-                <a href="#">Sicurezza</a>
-                <a href="#">Assistenza</a>
-            </div>
+            <ul class="nav flexbox">
+                <li><a href="#">Scarica</a></li>
+                <li><a href="#">Perchè Discord</a></li>
+                <li><a href="#">Nitro</a></li>
+                <li><a href="#">Sicurezza</a></li>
+                <li><a href="#">Assistenza</a></li>
+            </ul>
             <a href="#" class="accedi">Accedi</a>
         </div>
 
@@ -31,8 +31,10 @@
         <div class="areaPrincipaleHeader">
             <div class="contenutooHeader">
                 <h1>Il tuo posto per parlare</h1>
-                <p>Che tu faccia parte di un club scolastico, gruppo di gamer, comunità artistica mondiale, o semplicemente
-                    di un piccolo gruppo di amici che vuole passare il tempo assieme, Discord rende più facile chiacchierare
+                <p>Che tu faccia parte di un club scolastico, gruppo di gamer, comunità artistica mondiale, o
+                    semplicemente
+                    di un piccolo gruppo di amici che vuole passare il tempo assieme, Discord rende più facile
+                    chiacchierare
                     ogni giorno e ritrovarsi più spesso.</p>
                 <input type="button" value="&#8595; Scarica per Mac">
                 <input type="button" value="Apri Discord nel tuo browser">
@@ -42,35 +44,60 @@
 
     <!-- Area principale della pagina, contenenti immagini e testo -->
     <main>
-        <div class="areaContenitore flexbox">
-            <div class="img flexbox">Immagine</div>
-            <div class="contenutoTesto flexbox">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero, rem, ea
-                voluptas
-                doloribus eum corrupti enim quo vel quas quisquam molestiae soluta quasi laborum pariatur non illum
-                quod! Ea, veniam.</div>
+        <div class="areaContenitore">
+            <div class="areaTestoMain flexbox">
+                <img src="img/item1.svg" alt="Immagine 1" class="img">
+                <div class="contenutoTesto margineSinistro flexbox flex-direction-column">
+                    <h2>Un luogo a invito con tutto lo spazio necessario per parlare</h2>
+                    <p>I server Discord sono organizzati in canali tematici in cui puoi collaborare, condividere o
+                        semplicemente parlare della tua giornata senza intasare una chat di gruppo.</p>
+                </div>
+            </div>
         </div>
-        <div class="areaContenitore flexbox">
-            <div class="contenutoTesto flexbox">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non earum
-                porro hic
-                libero deleniti reiciendis amet animi adipisci unde assumenda, autem nemo ducimus ullam reprehenderit,
-                quia qui cupiditate suscipit dignissimos.</div>
-            <div class="img flexbox">Immagine</div>
+
+        <div class="areaContenitore">
+            <img class="ondaSuperiore" src="img/wave.svg" alt="effetto onda">
+            <div class="areaTestoMain flexbox">
+                <div class="contenutoTesto margineDestro flexbox flex-direction-column">
+                    <h2>Dove trovarsi è facile</h2>
+                    <p>Mettiti comodo in un canale vocale quando hai tempo. Gli amici nel tuo server possono vedere che
+                        sei lì e unirsi istantaneamente senza dover chiamare.</p>
+                </div>
+                <img src="img/item2.svg" alt="Immagine 2" class="img">
+            </div>
         </div>
-        <div class="areaContenitore flexbox">
-            <div class="img flexbox">Immagine</div>
-            <div class="contenutoTesto flexbox">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi hic
-                vitae,
-                ratione non aliquid recusandae harum labore quae porro consequatur nesciunt dolore exercitationem
-                sapiente alias adipisci, vel nam maxime neque.</div>
+
+        <div class="areaContenitore">
+            <img class="ondaInferiore" src="img/wave.svg" alt="effetto onda">
+            <div class="areaTestoMain flexbox">
+                <img src="img/item3.svg" alt="Immagine 3" class="img">
+                <div class="contenutoTesto margineSinistro flexbox flex-direction-column">
+                    <h2>Da pochi a un fandom</h2>
+                    <p>Dai inizio a una community di qualsiasi dimensione con strumenti di moderazione e accesso ai
+                        membri personalizzabile. Concedi ai membri poteri speciali, crea canali privati, e molto altro.
+                    </p>
+                </div>
+            </div>
         </div>
-        <div class="areaContenitore flexbox flex-direction-column align-items">
-            <div class="contenutoTesto2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore ipsa id dicta
-                expedita neque optio exercitationem temporibus sapiente nisi, perferendis porro iure consequatur quas a
-                autem in cumque at tenetur?</div>
-            <div class="img2">Immagine</div>
-            <div class="contenutoTesto2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum nihil iste vel
-                modi, soluta cumque consectetur illo ipsum odit totam omnis, quaerat consequuntur. Nisi laudantium,
-                beatae corrupti voluptatum tempora ducimus.</div>
+
+
+
+
+        <div class="areaContenitore flexbox flex-direction-column">
+            <img class="ondaSuperiore" src="img/wave.svg" alt="effetto onda">
+            <div id="styleTestoImmagine4" class="contenutoTesto flexbox flex-direction-column">
+                <h2>Tecnologia affidabile per tenersi in contatto</h2>
+                <p>Video e audio a bassa latenza ti faranno sentire come se foste tutti nella stessa stanza. Fai ciao in
+                    video, guarda gli amici giocare in streaming, o riunitevi in una sessione di disegno con la
+                    condivisione schermo.
+                </p>
+            </div>
+            <img id="styleImmagine4" src="img/item4-big.svg" alt="Immagine 4">
+
+            <div id="styleImmagine4Inferiore" class="flexbox flex-direction-column">
+                <h2>Pronto a iniziare la tua avventura?</h2>
+                <input type="button" value="&#8595; Scarica per Mac">
+            </div>
         </div>
     </main>
 

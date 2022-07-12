@@ -8,48 +8,68 @@ body {
     font-family: sans-serif;
 }
 
-/* da eliminare */
-header {
-    background-color: blue;
-}
-
-/* /da eliminare */
-
 .flexbox {
     display: flex;
 }
 
+header {
+    background-color: #255ee9;
+}
+
 /* Area superiore del Header, relativo alla barra di navigazione */
 .barraNav {
-    height: 70px;    /* da rimuovere */
     margin: 0 auto;
     max-width: 1200px;
+    padding: 20px 0;
 }
 
 .logo {
     flex-basis: 15%;
-    background-color: yellow;
+    height: 30px;
 }
 
 .nav {
     flex-basis: 70%;
-    background-color: yellowgreen;
     justify-content: center;
     align-items: center;
 }
 
+.nav > a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0 20px;
+}
+
+.nav > a:hover {
+    transform: scale(1.2);
+    transition-duration: 400ms;
+    color: #c6efff;
+}
+
 .accedi {
     flex-basis: 15%;
-    background-color: yellow;
+    margin: 0 auto;
+    max-width: 80px;
+    text-align: center;
+    align-self: center;
+    background-color: #fff;
+    border-radius: 50px;
+    padding: 9px;
+    text-decoration: none;
+    color: #000;
+    font-size: 0.9rem;
+}
+
+.accedi:hover {
+    background-color: rgb(223, 244, 250);
 }
 
 /* Area inferiore del Header, relativa all'area in cui è presente titolo, testo di presentazione e pulsanti */
 .areaPrincipaleHeader {
     text-align: center;
     margin: 0 auto;
-    max-width: 700px;
-    background-color: rgb(184, 255, 152);
-    height: 350px;    /* da rimuovere */
+    background-image: url("../img/jumbo.png");
+    background-size: cover;
 }
 
 .areaPrincipaleHeader h1 {
@@ -130,21 +150,21 @@ footer {
     background-color: yellow;
 }
 
-.imgSocial{
+.imgSocial {
     width: 30px;
     height: 30px;
     border: 1px solid rebeccapurple;
     background-color: red;
 }
 
-.areaLink{
+.areaLink {
     flex-basis: calc(70% / 4);
     background-color: goldenrod;
     gap: 10px;
 }
 
 /* Area inferiore della pagina, contenenti logo e pulsante registrati */
-.areaInferioreFooter{
+.areaInferioreFooter {
     background-color: red;
     justify-content: space-between;
 }

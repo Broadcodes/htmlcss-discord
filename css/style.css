@@ -1,0 +1,150 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+/* da eliminare */
+header {
+    background-color: blue;
+}
+
+/* /da eliminare */
+
+.flexbox {
+    display: flex;
+}
+
+/* Area superiore del Header, relativo alla barra di navigazione */
+.barraNav {
+    height: 70px;    /* da rimuovere */
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.logo {
+    flex-basis: 15%;
+    background-color: yellow;
+}
+
+.nav {
+    flex-basis: 70%;
+    background-color: yellowgreen;
+    justify-content: center;
+    align-items: center;
+}
+
+.accedi {
+    flex-basis: 15%;
+    background-color: yellow;
+}
+
+/* Area inferiore del Header, relativa all'area in cui è presente titolo, testo di presentazione e pulsanti */
+.areaPrincipaleHeader {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 700px;
+    background-color: rgb(184, 255, 152);
+    height: 350px;    /* da rimuovere */
+}
+
+.areaPrincipaleHeader h1 {
+    padding: 80px 0 20px;
+}
+
+.areaPrincipaleHeader p {
+    padding: 20px 0 20px;
+}
+
+/* Area principale della pagina, contenenti immagini e testo */
+.areaContenitore {
+    background-color: rgb(142, 232, 255);
+    border-bottom: 3px dotted green;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.areaContenitore:nth-child(even) {
+    background-color: rgb(142, 167, 255);
+}
+
+/* ---------inizio area da modificare--------- */
+.img {
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 350px;
+    margin: 50px 50px;
+    flex-basis: 70%;
+}
+
+.contenutoTesto {
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+    flex-basis: 30%;
+}
+
+/* ---------inizio area da eliminare--------- */
+.img2 {
+    border: 1px solid black;
+    width: 800px;
+    height: 450px;
+    margin: 50px 50px;
+}
+
+.contenutoTesto2 {
+    width: 800px;
+    height: 100px;
+    margin: 50px 50px;
+}
+
+/* ---------fine area da eliminare--------- */
+
+.flex-direction-column {
+    flex-direction: column;
+}
+
+.align-items {
+    align-items: center;
+}
+
+footer {
+    background-color: blue;
+}
+
+/* Area superiore della pagina, contenenti area social e link */
+.areaSuperioreFooter {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.areaSocial {
+    flex-basis: 30%;
+    background-color: yellow;
+}
+
+.imgSocial{
+    width: 30px;
+    height: 30px;
+    border: 1px solid rebeccapurple;
+    background-color: red;
+}
+
+.areaLink{
+    flex-basis: calc(70% / 4);
+    background-color: goldenrod;
+    gap: 10px;
+}
+
+/* Area inferiore della pagina, contenenti logo e pulsante registrati */
+.areaInferioreFooter{
+    background-color: red;
+    justify-content: space-between;
+}

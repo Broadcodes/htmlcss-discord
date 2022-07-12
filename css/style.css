@@ -218,6 +218,10 @@ header {
     margin-bottom: 110px;
 }
 
+#styleImmagine4Inferiore input:hover {
+    background-color: #6d83c9;
+}
+
 footer {
     background-color: #23272a;
 }
@@ -292,6 +296,30 @@ footer {
 
 /* Area inferiore della pagina, contenenti logo e pulsante registrati */
 .areaInferioreFooter {
-    background-color: red;
+    border-top: 2px solid #363f56;
+    max-width: 1100px;
+    margin: 0 auto;
     justify-content: space-between;
+    padding-bottom: 50px;
+}
+
+.logoFooter{
+    padding: 30px 0;
+    width: 110px;
+}
+
+.areaInferioreFooter a{
+    max-width: 80px;
+    text-align: center;
+    align-self: center;
+    border-radius: 50px;
+    padding: 9px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    color: #fff;
+    background-color: #8ea1e1;
+}
+
+.areaInferioreFooter a:hover {
+    background-color: #6d83c9;
 }

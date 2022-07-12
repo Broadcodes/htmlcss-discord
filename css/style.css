@@ -66,18 +66,53 @@ header {
 
 /* Area inferiore del Header, relativa all'area in cui è presente titolo, testo di presentazione e pulsanti */
 .areaPrincipaleHeader {
-    text-align: center;
-    margin: 0 auto;
     background-image: url("../img/jumbo.png");
     background-size: cover;
 }
 
+.contenutooHeader{
+    text-align: center;
+    margin: 0 auto;
+    max-width: 750px;
+    color: #fff;
+}
+
 .areaPrincipaleHeader h1 {
     padding: 80px 0 20px;
+    font-size: 3.2rem;
 }
 
 .areaPrincipaleHeader p {
     padding: 20px 0 20px;
+    font-size: 1.2rem;
+    line-height: 30px;
+}
+
+.contenutooHeader input{
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 50px;
+    padding: 15px 22px;
+    margin: 0 12px 150px;
+    font-size: 1.2rem;
+}
+
+.contenutooHeader input[value $="browser"]{
+    color: #fff;
+    background-color: #23272a;
+}
+
+.contenutooHeader input:hover{
+    background-color: rgb(223, 244, 250);
+    transform: scale(1.05);
+    transition-duration: 400ms;
+}
+
+.contenutooHeader input[value $="browser"]:hover{
+    background-color: #394046;
+    transform: scale(1.05);
+    transition-duration: 400ms;
 }
 
 /* Area principale della pagina, contenenti immagini e testo */

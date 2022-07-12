@@ -178,34 +178,34 @@ header {
     flex-direction: column;
 }
 
-#styleTestoImmagine4{
+#styleTestoImmagine4 {
     padding: 80px 0 30px;
 }
 
-#styleTestoImmagine4 p{
+#styleTestoImmagine4 p {
     text-align: center;
     max-width: 900px;
 }
 
-#styleImmagine4{
+#styleImmagine4 {
     width: 1050px;
     justify-content: center;
     align-self: center;
 }
 
-#styleImmagine4Inferiore{
+#styleImmagine4Inferiore {
     padding: 20px 50px;
     background-image: url("../img/stars.svg");
     background-repeat: no-repeat;
     margin: 0px auto;
 }
 
-#styleImmagine4Inferiore h2{
+#styleImmagine4Inferiore h2 {
     font-size: 1.7rem;
     padding: 20px 0 40px;
 }
 
-#styleImmagine4Inferiore input{
+#styleImmagine4Inferiore input {
     cursor: pointer;
     color: #fff;
     border-radius: 50px;
@@ -219,31 +219,75 @@ header {
 }
 
 footer {
-    background-color: blue;
+    background-color: #23272a;
 }
 
 /* Area superiore della pagina, contenenti area social e link */
 .areaSuperioreFooter {
-    max-width: 1200px;
+    padding: 80px 0 30px;
+    max-width: 1100px;
     margin: 0 auto;
 }
 
 .areaSocial {
-    flex-basis: 30%;
-    background-color: yellow;
+    flex-basis: 25%;
+    margin-right: 50px;
+}
+
+.areaSuperioreFooter div > h3 {
+    color: #7289da;
+}
+
+.areaSocial h3{
+    font-size: 1.8rem;
+    padding-bottom: 20px;
+}
+
+.areaSocial p{
+    font-size: 0.8rem;
+    display: inline;
+}
+
+#freccia{
+    width: 8px;
+}
+
+#bandiera{
+    width: 20px;
+}
+
+.areaSuperioreFooter div > p,
+.areaSuperioreFooter div > ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.areaSuperioreFooter div > ul li{
+    list-style-type: none;
+    padding: 5px 0;
+}
+
+.social{
+    padding-top: 20px;
 }
 
 .imgSocial {
-    width: 30px;
-    height: 30px;
-    border: 1px solid rebeccapurple;
-    background-color: red;
+    margin-right: 20px;
+    width: 18px;
 }
 
 .areaLink {
-    flex-basis: calc(70% / 4);
-    background-color: goldenrod;
+    flex-basis: calc(75% / 4);
     gap: 10px;
+}
+
+.areaLink h3,
+.areaLink ul li a{
+    font-size: 0.9rem;
+}
+
+.areaLink ul li a:hover{
+    text-decoration: underline;
 }
 
 /* Area inferiore della pagina, contenenti logo e pulsante registrati */
